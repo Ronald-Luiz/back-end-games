@@ -1,0 +1,15 @@
+{
+    "name": "banco-de-dados",
+    "version": 2,
+    "public": true,
+    "build": {
+        "src": "/Banco/src/index.js",
+        "use": "@vercel/node"
+    },
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/Banco/src/index.js"
+        }
+    ]
+}
